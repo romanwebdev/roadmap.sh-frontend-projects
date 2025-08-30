@@ -8,4 +8,7 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
 2. [**Basic HTML Website**](./projects/02-basic-html-website)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+3. [**Personal Portfolio**](./projects/03-personal-portfolio)
+   ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+   ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
