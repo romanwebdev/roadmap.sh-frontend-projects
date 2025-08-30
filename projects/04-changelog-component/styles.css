@@ -1,0 +1,134 @@
+html,
+body,
+h1,
+p {
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100dvh;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    margin: 1rem;
+}
+
+.changelog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+
+    .changelog__title {
+        font-size: 2rem;
+    }
+
+    .changelog__description {
+        color: grey;
+        margin: 1.5rem 0 2.25rem;
+        text-align: center;
+    }
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+
+    &::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: black;
+        position: absolute;
+        left: 185px;
+        top: 0;
+    }
+
+    .timeline__item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .timeline__date {
+        width: 160px;
+        text-align: right;
+        padding-right: 1.25rem;
+        color: #999;
+        font-size: 0.9rem;
+        flex-shrink: 1;
+    }
+
+    .timeline__dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        background: #000;
+        border-radius: 50%;
+        z-index: 1;
+        margin-right: 1.25rem;
+    }
+
+    .timeline__content {
+        flex: 1;
+        font-size: 1rem;
+        color: #222;
+    }
+
+    @media (max-width: 600px) {
+        &::before {
+            left: 5px;
+        }
+        .timeline__item {
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            padding-left: 1.5rem;
+            box-sizing: border-box;
+        }
+        .timeline__date {
+            text-align: left;
+            padding-right: 0;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .timeline__dot {
+            margin-bottom: 0.5rem;
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+        }
+    }
+}
+
+.actions {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 1.5rem;
+    background: #222;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 500ms;
+
+    &:hover {
+        background: #444;
+    }
+}
