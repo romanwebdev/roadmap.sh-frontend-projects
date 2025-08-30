@@ -4,5 +4,8 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
 
 ## 📚 Projects List
 
-1. [**Single-Page CV**](./projects/01-single-page-cv/README.md)
+1. [**Single-Page CV**](./projects/01-single-page-cv)
+   ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+2. [**Basic HTML Website**](./projects/02-basic-html-website)
+   ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
