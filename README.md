@@ -13,3 +13,7 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
 4. [**Changelog Component**](./projects/04-changelog-component)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+   ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
+5. [**Testimonial Cards**](./projects/05-testimonial-cards)
+   ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+   ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)

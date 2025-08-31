@@ -8,8 +8,7 @@ HTML, CSS
 
 ## Features
 
-- [x] HTML and CSS are used
-- [x] Responsive layout
+- Responsive layout
 
 ## Link
 
