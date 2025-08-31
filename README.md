@@ -17,3 +17,6 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
 5. [**Testimonial Cards**](./projects/05-testimonial-cards)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
+6. [**Datepicker UI**](./projects/06-datepicker-ui)
+   ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+   ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
