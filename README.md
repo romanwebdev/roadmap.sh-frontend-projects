@@ -4,12 +4,11 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
 
 ## 📚 Projects List
 
-1. [**Single-Page CV**](./projects/01-single-page-cv)
-   [🔗](https://roadmap.sh/projects/single-page-cv)
+1. [**Single-Page CV**](./projects/01-single-page-cv)[🔗](https://roadmap.sh/projects/single-page-cv)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
-2. [**Basic HTML Website**](./projects/02-basic-html-website)
+2. [**Basic HTML Website**](./projects/02-basic-html-website)[🔗](https://roadmap.sh/projects/basic-html-website)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
-3. [**Personal Portfolio**](./projects/03-personal-portfolio)
+3. [**Personal Portfolio**](./projects/03-personal-portfolio)[🔗](https://roadmap.sh/projects/portfolio-website)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
 4. [**Changelog Component**](./projects/04-changelog-component)
@@ -24,9 +23,9 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
 7. [**Accessible Form UI**](./projects/07-accessible-form-ui)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
-6. [**Testimonial Cards**](./projects/05-testimonial-cards)
+8. [**Image Grid Layout**](./projects/08-image-grid-layout)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
-7. [**Datepicker UI**](./projects/06-datepicker-ui)
+9. [**Tooltip UI**](./projects/09-tooltip-ui)
    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
