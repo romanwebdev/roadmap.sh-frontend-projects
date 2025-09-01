@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form class="form" autocomplete="on">
+      <div>
+        <div class="form__control">
+          <label for="name" class="form__label">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            placeholder="What should we call you?"
+            aria-required="true"
+            autocomplete="name"
+          />
+          <span
+            class="form__validation"
+            id="name-error"
+            role="alert"
+            style="display: none"
+          ></span>
+        </div>
+        <div class="form__control">
+          <label for="email" class="form__label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__input form__input--invalid"
+            placeholder="john@doe.com"
+            aria-required="true"
+            aria-invalid="true"
+            aria-describedby="email-error"
+            autocomplete="email"
+          />
+          <span class="form__validation" id="email-error" role="alert">
+            Email is already taken
+          </span>
+        </div>
+        <div class="form__control">
+          <label for="password" class="form__label">Enter Password</label>
+          <div class="form__input--wrap">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form__input"
+              placeholder="*****"
+              aria-required="true"
+              aria-describedby="password-error"
+              autocomplete="new-password"
+            />
+            <button
+              type="button"
+              class="form__input-button"
+              aria-label="Show password"
+              aria-pressed="false"
+            >
+              👁
+            </button>
+          </div>
+          <span
+            class="form__validation"
+            id="password-error"
+            role="alert"
+            style="display: none"
+          ></span>
+        </div>
+        <div class="form__control">
+          <label for="confirmPassword" class="form__label">
+            Confirm Password
+          </label>
+          <div class="form__input--wrap">
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              class="form__input"
+              placeholder="*****"
+              aria-required="true"
+              aria-describedby="confirmPassword-error"
+              autocomplete="new-password"
+            />
+            <button
+              type="button"
+              class="form__input-button"
+              aria-label="Show confirm password"
+              aria-pressed="false"
+            >
+              👁
+            </button>
+          </div>
+          <span
+            class="form__validation"
+            id="confirmPassword-error"
+            role="alert"
+            style="display: none"
+          ></span>
+        </div>
+        <button class="form__submit" type="submit">Update Profile</button>
+      </div>
+      <div class="form__section">
+        <div class="progress">
+          <svg
+            viewBox="0 0 36 36"
+            class="circular-chart"
+            width="120"
+            height="120"
+          >
+            <path
+              class="circular-chart__bg"
+              d="M18 2.0845
+           a 15.9155 15.9155 0 0 1 0 31.831
+           a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circular-chart__circle"
+              stroke-dasharray="65, 100"
+              d="M18 2.0845
+           a 15.9155 15.9155 0 0 1 0 31.831
+           a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="circular-chart__percentage">65%</text>
+          </svg>
+          <p class="progress__title">Profile Completeness</p>
+        </div>
+        <ul class="checklist">
+          <li class="checklist__item checklist__item--done" tabindex="0">
+            Create Account
+          </li>
+          <li class="checklist__item checklist__item--done" tabindex="0">
+            Update Roadmap Progress
+          </li>
+          <li class="checklist__item checklist__item--done" tabindex="0">
+            Setup Public Profile
+          </li>
+          <li class="checklist__item" tabindex="0">
+            Complete your first project
+          </li>
+          <li class="checklist__item" tabindex="0">Invite your Friends</li>
+        </ul>
+      </div>
+    </form>
+  </body>
+</html>
