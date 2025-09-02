@@ -1,0 +1,29 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg);
+    padding: 8px;
+    border-radius: var(--radius);
+
+    .actions__nav,
+    .actions__toggle {
+        background: none;
+        color: #000;
+        border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        transition: color 400ms;
+    }
+
+    .actions__toggle {
+        font-weight: bold;
+    }
+
+    .actions__nav:hover {
+        color: slateblue;
+    }
+
+    .actions__toggle:hover {
+        color: brown;
+    }
+}

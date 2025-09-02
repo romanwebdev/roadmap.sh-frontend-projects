@@ -1,0 +1,14 @@
+.app {
+    width: 90%;
+    max-width: 1400px;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}

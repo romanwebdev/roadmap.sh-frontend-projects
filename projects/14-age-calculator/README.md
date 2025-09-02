@@ -5,7 +5,7 @@ The application is bundled with Vite for fast development and optimized builds.
 
 ## Prerequisites
 
-Install [Node.js](https://nodejs.org/) 
+Install [Node.js](https://nodejs.org/)
 
 To check if Node.js is installed, run:
 
@@ -35,7 +35,11 @@ npm install
 npm run dev
 ```
 
-4. **Open site on http://localhost:5173**
+4. **Open your browser and visit:**
+
+```
+http://localhost:5173
+```
 
 ## Technologies
 

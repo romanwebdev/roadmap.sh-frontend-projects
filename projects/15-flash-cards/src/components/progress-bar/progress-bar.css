@@ -1,0 +1,36 @@
+.progress {
+    display: flex;
+    align-items: center;
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: 8px;
+    position: relative;
+
+    .progress__fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 2.5rem;
+        background: lightgreen;
+        border-radius: var(--radius);
+        font-weight: bold;
+        transition: width 400ms;
+    }
+
+    .progress__percent,
+    .progress__status {
+        font-size: 18px;
+    }
+
+    .progress__percent {
+        margin-left: 0.5rem;
+    }
+
+    .progress__status {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
