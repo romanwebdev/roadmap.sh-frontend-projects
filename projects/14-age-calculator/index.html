@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <script type="module" src="/src/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Age Calculator</h1>
+      <form class="form">
+        <label for="date" class="form__label">Enter your birth date:</label>
+        <input
+          type="text"
+          id="date"
+          name="date"
+          class="form__input datepicker"
+          placeholder="01.01.2001"
+          autocomplete="off"
+        />
+        <button class="form__submit" type="button" disabled>Calculate</button>
+      </form>
+      <p class="result"></p>
+    </div>
+  </body>
+</html>
