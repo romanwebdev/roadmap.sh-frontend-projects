@@ -37,3 +37,7 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
     ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
+12. [**Restricted Textarea**](./projects/12-restricted-textarea) [🔗](https://roadmap.sh/projects/restricted-textarea)
+    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
+    ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
