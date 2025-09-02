@@ -50,7 +50,7 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
     ![NPM icon badge](https://img.shields.io/badge/--CB3837?logo=npm&logoColor=black)
-15. [**Flash Cards**](./projects/15-flash-cards) [🔗](https://roadmap.sh/projects/age-calculator)
+15. [**Flash Cards**](./projects/15-flash-cards) [🔗](https://roadmap.sh/projects/flash-cards)
     ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
