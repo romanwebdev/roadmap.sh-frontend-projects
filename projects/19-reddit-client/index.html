@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit Client</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Reddit Client</h1>
+      <button type="button" class="add-btn">+</button>
+    </header>
+    <div class="subreddits"></div>
+    <dialog class="modal">
+      <form class="modal__form">
+        <div class="modal__control">
+          <label for="subreddit-name">Enter the name of subreddit:</label>
+          <input
+            type="text"
+            id="subreddit-name"
+            name="subreddit-name"
+            placeholder="learnprogramming"
+            class="modal__input"
+            required
+          />
+        </div>
+        <div class="modal__actions">
+          <button value="submit" class="modal__btn">Confirm</button>
+          <button
+            value="cancel"
+            class="modal__btn modal__btn--cancel"
+            type="button"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <div class="loading"></div>
+  </body>
+</html>

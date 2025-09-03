@@ -1,0 +1,219 @@
+:root {
+    --radius: 4px;
+    --border: 1px solid grey;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: var(--border);
+    box-sizing: border-box;
+
+    .add-btn {
+        border: none;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.subreddits {
+    display: flex;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.subreddit {
+    display: flex;
+    flex-direction: column;
+    border-right: var(--border);
+    flex-shrink: 0;
+    min-width: 250px;
+
+    .subreddit__header {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 16px;
+
+        .subreddit__address {
+            font-size: 18px;
+            color: grey;
+        }
+
+        .subreddit__btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.posts {
+    list-style: none;
+    padding-left: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr;
+    gap: 6px;
+    max-width: 600px;
+    padding: 10px 16px;
+    border-bottom: var(--border);
+
+    .post__votes-count {
+        min-width: 50px;
+    }
+
+    .post__author {
+        flex-shrink: 0;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .post__link {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: #451cac;
+            text-decoration: underline;
+        }
+    }
+}
+
+.modal {
+    border-radius: var(--radius);
+    border: var(--border);
+
+    .modal__control {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 16px;
+
+        label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            border: var(--border);
+            border-radius: var(--radius);
+            font-size: 16px;
+        }
+    }
+
+    .modal__actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+
+        .modal__btn {
+            padding: 8px 16px;
+            background-color: #000;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #333;
+            }
+        }
+    }
+}
+
+.loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(138, 138, 138, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="%237138FF" stroke="%237138FF" stroke-width="15" r="15" cx="40" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate></circle><circle fill="%237138FF" stroke="%237138FF" stroke-width="15" r="15" cx="100" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate></circle><circle fill="%237138FF" stroke="%237138FF" stroke-width="15" r="15" cx="160" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate></circle></svg>')
+        no-repeat center center;
+    background-size: contain;
+}
+
+.loading.active {
+    display: flex;
+}
+
+.error {
+    max-width: 50%;
+    min-width: 150px;
+    color: tomato;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+
+    .error__message {
+        margin-bottom: 16px;
+    }
+
+    .error__close-btn {
+        border: none;
+        background: #000;
+        color: #fff;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: var(--radius);
+    }
+}
