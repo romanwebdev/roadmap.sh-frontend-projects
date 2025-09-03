@@ -6,7 +6,7 @@ A task tracker that lets users add new tasks, mark them as complete, or delete t
 
 HTML, CSS, JavaScript
 
-## Requirements
+## Features
 
 - Basic JavaScript (selecting elements, listening to events, manipulating DOM)
 - Using local storage

@@ -63,3 +63,7 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
     ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
+18. [**GitHub Random Repository**](./projects/18-github-random-repository) [🔗](https://roadmap.sh/projects/github-random-repo)
+    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
+    ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
