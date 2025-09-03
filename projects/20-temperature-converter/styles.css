@@ -1,0 +1,58 @@
+:root {
+    --radius: 4px;
+}
+
+html,
+body,
+h1,
+p {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.title,
+.subtitle {
+    margin-bottom: 12px;
+}
+
+.form {
+    display: flex;
+    gap: 8px;
+    margin: 24px 0;
+
+    .form__input,
+    .form__select,
+    .form__submit {
+        padding: 8px;
+        border-radius: var(--radius);
+        font-size: 18px;
+    }
+
+    .form__submit {
+        border: none;
+        background: #222;
+        color: #fff;
+        padding: 9px 16px;
+        cursor: pointer;
+        transition: background 400ms;
+
+        &:hover {
+            background: #000;
+        }
+
+        &:disabled {
+            background: #777;
+            cursor: default;
+        }
+    }
+}
+
+.result {
+    font-size: 18px;
+}
