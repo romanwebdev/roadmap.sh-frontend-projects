@@ -75,3 +75,8 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
     ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
+21. [**Pomodoro Timer**](./projects/21-pomodoro-timer) [🔗](https://roadmap.sh/projects/pomodoro-timer)
+    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
+    ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
+    ![Vue icon badge](https://img.shields.io/badge/--42b883?logo=vuedotjs&logoColor=black)
