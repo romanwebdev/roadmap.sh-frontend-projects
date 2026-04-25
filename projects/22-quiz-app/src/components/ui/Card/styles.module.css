@@ -1,0 +1,125 @@
+.card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(244, 243, 236, 0.6) 100%);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    margin-bottom: 30px;
+    animation: slideUp 0.4s ease-out;
+}
+
+.question {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-h);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.answersContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.answerButton {
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    background: white;
+    color: var(--text-h);
+    text-align: left;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.answerButton:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--accent-bg);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(170, 59, 255, 0.15);
+}
+
+.answerButton:active:not(:disabled) {
+    transform: translateX(2px);
+}
+
+.answerButton.selected {
+    border-color: var(--accent);
+    background: var(--accent-bg);
+    color: var(--accent);
+}
+
+.correct {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-color: #28a745;
+    color: #155724;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+.correct::after {
+    content: " ✓";
+    font-weight: bold;
+}
+
+.wrong {
+    background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+    border-color: #dc3545;
+    color: #721c24;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
+}
+
+.wrong::after {
+    content: " ✕";
+    font-weight: bold;
+}
+
+.progressBar {
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent) 0%, #8b2fdb 100%);
+    border-radius: 2px;
+    transition: width 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 24px;
+    }
+
+    .question {
+        font-size: 1.25rem;
+    }
+
+    .answerButton {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+}

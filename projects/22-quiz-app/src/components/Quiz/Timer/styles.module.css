@@ -1,0 +1,14 @@
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.timerLabel {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.5px;
+}

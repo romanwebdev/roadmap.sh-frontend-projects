@@ -1,0 +1,72 @@
+[
+  {
+    "difficulty": "easy",
+    "question": "What is the closest star to Earth?",
+    "answers": ["The Moon", "The Sun", "Mars", "Venus"],
+    "correct": 1
+  },
+  {
+    "difficulty": "easy",
+    "question": "Which planet is known as the Red Planet?",
+    "answers": ["Jupiter", "Saturn", "Mars", "Mercury"],
+    "correct": 2
+  },
+  {
+    "difficulty": "easy",
+    "question": "What galaxy do we live in?",
+    "answers": [
+      "Andromeda Galaxy",
+      "Whirlpool Galaxy",
+      "Milky Way Galaxy",
+      "Sombrero Galaxy"
+    ],
+    "correct": 2
+  },
+  {
+    "difficulty": "medium",
+    "question": "Which planet has the most moons?",
+    "answers": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correct": 3
+  },
+  {
+    "difficulty": "medium",
+    "question": "What is the name of Earth's natural satellite?",
+    "answers": ["Europa", "Titan", "The Moon", "Phobos"],
+    "correct": 2
+  },
+  {
+    "difficulty": "medium",
+    "question": "What force keeps planets in orbit around the Sun?",
+    "answers": ["Magnetism", "Gravity", "Radiation", "Friction"],
+    "correct": 1
+  },
+  {
+    "difficulty": "hard",
+    "question": "What is the boundary around a black hole beyond which nothing can escape?",
+    "answers": [
+      "Singularity",
+      "Event Horizon",
+      "Photon Sphere",
+      "Accretion Disk"
+    ],
+    "correct": 1
+  },
+  {
+    "difficulty": "hard",
+    "question": "Which planet has the shortest orbital period around the Sun?",
+    "answers": ["Venus", "Earth", "Mercury", "Mars"],
+    "correct": 2
+  },
+  {
+    "difficulty": "very hard",
+    "question": "What type of galaxy is the Milky Way?",
+    "answers": ["Elliptical", "Irregular", "Spiral", "Ring"],
+    "correct": 2
+  },
+  {
+    "difficulty": "very hard",
+    "question": "What is the primary element found in stars?",
+    "answers": ["Oxygen", "Carbon", "Hydrogen", "Iron"],
+    "correct": 2
+  }
+]

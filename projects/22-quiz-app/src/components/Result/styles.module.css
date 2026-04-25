@@ -1,0 +1,229 @@
+.resultContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.resultCard {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(244, 243, 236, 0.6) 100%);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    margin-bottom: 30px;
+    animation: slideUp 0.4s ease-out;
+    text-align: center;
+}
+
+.resultTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent) 0%, #8b2fdb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 24px;
+}
+
+.scoreDisplay {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-h);
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.scoreLabel {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.scorePercentage {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-bg) 0%, rgba(170, 59, 255, 0.08) 100%);
+    border: 2px solid var(--accent-border);
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 12px;
+    font-size: 1.1rem;
+}
+
+.reviewSection {
+    margin-top: 40px;
+}
+
+.reviewTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-h);
+    margin-bottom: 24px;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 4px solid var(--accent);
+}
+
+.questionsReview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.questionReview {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    border-left: 4px solid var(--border);
+    transition: all 0.3s ease-out;
+    animation: slideUp 0.4s ease-out;
+}
+
+.questionReview.correct {
+    border-left-color: #28a745;
+    background: linear-gradient(135deg, rgba(212, 237, 218, 0.3) 0%, rgba(195, 230, 203, 0.2) 100%);
+}
+
+.questionReview.incorrect {
+    border-left-color: #dc3545;
+    background: linear-gradient(135deg, rgba(248, 215, 218, 0.3) 0%, rgba(245, 198, 203, 0.2) 100%);
+}
+
+.questionReview:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.questionText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-h);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.answerRow {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.answerItem {
+    font-size: 0.95rem;
+    color: var(--text);
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border-left: 3px solid var(--border);
+}
+
+.answerItem.label {
+    font-weight: 600;
+    color: var(--text-h);
+    background: transparent;
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+}
+
+.correctAnswer {
+    border-left-color: #28a745;
+    background: rgba(212, 237, 218, 0.4);
+    color: #155724;
+    font-weight: 600;
+}
+
+.userAnswer {
+    border-left-color: #dc3545;
+    background: rgba(248, 215, 218, 0.4);
+    color: #721c24;
+    font-weight: 600;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tryAgainButton {
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent) 0%, #8b2fdb 100%);
+    color: white;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(170, 59, 255, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.tryAgainButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(170, 59, 255, 0.4);
+}
+
+.tryAgainButton:active {
+    transform: translateY(-1px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .resultContainer {
+        padding: 24px 16px;
+    }
+
+    .resultCard {
+        padding: 24px;
+    }
+
+    .resultTitle {
+        font-size: 2rem;
+    }
+
+    .scoreDisplay {
+        font-size: 2.5rem;
+    }
+
+    .reviewTitle {
+        font-size: 1.5rem;
+        padding-left: 16px;
+    }
+
+    .questionReview {
+        padding: 16px;
+    }
+
+    .questionText {
+        font-size: 1rem;
+    }
+}

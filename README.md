@@ -80,3 +80,8 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![JS icon badge](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=black)
     ![Vue icon badge](https://img.shields.io/badge/--42b883?logo=vuedotjs&logoColor=black)
+22. [**Quiz App**](./projects/22-quiz-app) [🔗](https://roadmap.sh/projects/quiz-app)
+    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+    ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
+    ![TS icon badge](https://img.shields.io/badge/--007ACC?logo=typescript&logoColor=black)
+    ![React icon badge](https://img.shields.io/badge/--61DAFB?logo=React&logoColor=black)
