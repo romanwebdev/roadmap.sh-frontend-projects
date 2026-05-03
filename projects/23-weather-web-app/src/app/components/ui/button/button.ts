@@ -1,0 +1,16 @@
+import { Component, EventEmitter, input, Output } from '@angular/core';
+
+@Component({
+  selector: 'app-button',
+  imports: [],
+  templateUrl: './button.html',
+  styleUrl: './button.scss',
+})
+export class Button {
+  label = input('Click');
+  @Output() onClick = new EventEmitter<null>();
+
+  handleClick() {
+    this.onClick.emit();
+  }
+}

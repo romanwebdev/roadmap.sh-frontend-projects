@@ -1,0 +1,8 @@
+$primary-blue: oklch(50% 0.2 240);
+$light-blue: oklch(85% 0.1 240);
+$medium-blue: oklch(60% 0.15 240);
+$dark-blue: oklch(25% 0.1 240);
+$accent-blue: oklch(65% 0.25 240);
+
+$blue-gradient: linear-gradient(135deg, $light-blue 0%, $medium-blue 100%);
+$blue-to-dark-gradient: linear-gradient(180deg, $primary-blue 0%, $dark-blue 100%);

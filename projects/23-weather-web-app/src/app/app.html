@@ -1,0 +1,27 @@
+<main>
+  <h1>Weather App</h1>
+  <div class="container">
+    <app-input [(value)]="location" />
+    <app-button label="Find" (onClick)="fetchForecast()" />
+
+    @defer (when forecast()?.days) {
+      <div class="cards">
+        @for (day of forecast()?.days; track $index) {
+          <app-card [data]="day" />
+        } @empty {
+          <p class="message">No forecast</p>
+        }
+      </div>
+      @if (forecast()?.days?.length) {
+        <app-button label="Refresh" (onClick)="refreshForecast()" />
+      }
+    } @loading (minimum 300ms) {
+      <p class="message">Loading...</p>
+    } @placeholder {
+      <p class="message">Determine your location</p>
+    }
+    @if (forecast()?.error) {
+      <p class="error">{{ forecast()?.message }}</p>
+    }
+  </div>
+</main>

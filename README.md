@@ -85,3 +85,8 @@ These projects follow the [roadmap.sh](https://roadmap.sh/projects?g=frontend) *
     ![CSS icon badge](https://img.shields.io/badge/--1572B6?logo=css&logoColor=black)
     ![TS icon badge](https://img.shields.io/badge/--007ACC?logo=typescript&logoColor=black)
     ![React icon badge](https://img.shields.io/badge/--61DAFB?logo=React&logoColor=black)
+23. [**Weather Web App**](./projects/23-weather-web-app) [🔗](https://roadmap.sh/projects/weather-app)
+    ![HTML5 icon badge](https://img.shields.io/badge/--e34f27?logo=html5&logoColor=black)
+    ![SASS icon badge](https://img.shields.io/badge/--CC6699?logo=sass&logoColor=black)
+    ![TS icon badge](https://img.shields.io/badge/--007ACC?logo=typescript&logoColor=black)
+    ![Angular icon badge](https://img.shields.io/badge/--E23237?logo=Angular&logoColor=white)

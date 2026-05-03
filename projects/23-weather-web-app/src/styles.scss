@@ -1,0 +1,26 @@
+@use 'variables';
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.125rem;
+  color: variables.$dark-blue;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: variables.$dark-blue;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: variables.$blue-gradient;
+  min-height: 100vh;
+  color: variables.$dark-blue;
+}
+
+p {
+  margin: 0;
+  color: variables.$dark-blue;
+}
