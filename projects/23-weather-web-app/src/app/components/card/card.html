@@ -1,7 +1,7 @@
 <div class="card" animate.enter="enter-animation">
-  <h2>{{ data().conditions }}</h2>
-  <p>{{ data().datetime }}</p>
-  <p>Temperature: {{ fahrenheitToCelsius(data().temp) }}°C</p>
-  <p>Wind speed: {{ data().windspeed }}mph</p>
-  <p>Likelihood of rain: {{ data().precipprob }}%</p>
+  <h2>{{ data()?.conditions }}</h2>
+  <p>{{ data()?.datetime }}</p>
+  <p>Temperature: {{ fahrenheitToCelsius(data()?.temp) }}°C</p>
+  <p>Wind speed: {{ data()?.windspeed }}mph</p>
+  <p>Likelihood of rain: {{ data()?.precipprob }}%</p>
 </div>

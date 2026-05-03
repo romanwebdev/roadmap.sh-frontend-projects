@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { IDay } from '../../types';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,10 @@ import { Component, input } from '@angular/core';
   styleUrl: './card.scss',
 })
 export class Card {
-  data = input<any>(null);
+  data = input<IDay | null>(null);
 
-  fahrenheitToCelsius(f: number) {
+  fahrenheitToCelsius(f: number | undefined) {
+    if (!f) return 'N/A';
     return Math.round(((f - 32) * 5) / 9);
   }
 }
